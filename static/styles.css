@@ -1,0 +1,209 @@
+
+
+/* Fuentes y reseteo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background: #1e293b;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.header nav ul li a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header nav ul li a.active,
+.header nav ul li a:hover {
+  color: #fff;
+  border-bottom: 2px solid #38bdf8;
+}
+
+/* Main container */
+.main-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Welcome card */
+.welcome-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.welcome-card h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.welcome-card p {
+  font-size: 1rem;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.welcome-card .btn {
+  padding: 0.75rem 1.5rem;
+  background: #38bdf8;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.welcome-card .btn:hover {
+  background: #0ea5e9;
+}
+
+/* Dashboard cards */
+.dashboard {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.dashboard .card {
+  background: #fff;
+  flex: 1 1 calc(33% - 1rem);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.dashboard .card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+
+.dashboard .card p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* Login encapsulado */
+.containerLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.containerLogin .cardLogin {
+  background: #fff;
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.containerLogin .cardLogin h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+}
+
+.containerLogin .cardLogin label {
+  display: block;
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.containerLogin .cardLogin input {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.containerLogin .cardLogin input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+  outline: none;
+}
+
+.containerLogin .cardLogin .actions {
+  margin-top: 1.8rem;
+}
+
+.containerLogin .cardLogin button {
+  width: 100%;
+  padding: 0.75rem 0;
+  background: #38bdf8;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.containerLogin .cardLogin button:hover {
+  background: #0ea5e9;
+}
+
+.containerLogin .cardLogin .message {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: red;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .containerLogin .cardLogin {
+    padding: 2rem 1.5rem;
+  }
+}

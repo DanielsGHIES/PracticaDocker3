@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página de Inicio - Mi App Docker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Mi App Docker</div>
+    <nav>
+      <ul>
+        <li><a href="/home" class="active">Inicio</a></li>
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#">Configuración</a></li>
+        <li><a href="/">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <section class="welcome-card">
+      <h1>¡Bienvenido!</h1>
+      <p>Has iniciado sesión correctamente. Aquí puedes acceder a todas las funcionalidades de tu aplicación.</p>
+      <a href="#" class="btn">Ir a Panel</a>
+    </section>
+
+    <section class="dashboard">
+      <div class="card">
+        <h2>Usuarios Registrados</h2>
+        <p>12</p>
+      </div>
+      <div class="card">
+        <h2>Proyectos Activos</h2>
+        <p>5</p>
+      </div>
+      <div class="card">
+        <h2>Mensajes Nuevos</h2>
+        <p>3</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Mi App Docker. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
